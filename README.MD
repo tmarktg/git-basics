@@ -1,5 +1,8 @@
 What is git?
 
+- based off this video
+  https://www.youtube.com/watch?v=RGOj5yH7evk
+
 - open source version control system
 
 What is version control?
@@ -37,6 +40,26 @@ Git Commands
 - git branch
 - git checkout -b -> switch bewteen branches or use -b to create a new branch
 - git push and git push -u origin feature-readme-instructions will push a branch up to github
+- git reset -> undo file change that was staged
+
+- git reset HEAD~1 -> head means pointer to last commit, ~1 means 1 commit further unstaged and uncommitted last changes
+
+- git reset 0f77f20ba1500e0dd1c843c1b98b693c5002511b -> unstage and uncommit from the git
+
+- git reset --hard 0f77f20ba1500e0dd1c843c1b98b693c5002511b -> completely remove the change
+
+- git log -> log of all your commits
+
+merge conflict
+
+- code on your branch, others writing code on their branch
+- master updated on diff places
+- multiple ppl change the same file
+- git doesn't know what code to keep, delete, is redundant
+- git diff -> shows changes made since last commit
+
+- git branch -d NAMEOFBRANCH
+- git merge BRANCHMERGINGTO
 
 `ls -la`
 
@@ -90,3 +113,14 @@ made a pr
 - can update code with additional commits on same branch
 - pr merged, delete feature branch and switch back to master branch
 - make additional coding changes, make new branch start process over
+
+Fork
+
+- make a pull request on repo
+- put base repository and compare to your repository
+- branch off from repo
+- make a complete clone of the repo
+
+Merging
+
+- sometimes have a branch like dev reserved for merging
