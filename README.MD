@@ -29,9 +29,32 @@ Git Commands
 - push -> upload git commits to a remote repo like github
 - pull -> download changes from remote repo to local machine, opposite of push
 - status -> shows all files that were updated, created, deleted that haven't been saved in commit yet
-- commit -m -> m means message, what and why of the commit you're making
+- commit -m "heading" -m "description" -> m means message, what and why of the commit you're making
+- push origin master -> origin is location of git repository master is branch to push to
 
 `ls -la`
 
 - list everything in the directory including hidden folders
 - git folder stores all files that save your commits or code changes, all changes recorded in history of repo including ones in github.com
+
+ssh keys
+
+- prove to github you're the owner of the account
+- generate key locally
+
+`ssh-keygen -t rsa -b 4096 -C "github email address`
+
+- -t type of encryption
+- rsa -b 4096 strength of encryption
+
+key.pub
+
+- upload into github interface
+- public key, ok for other people to see key
+- other key is private key, keep secure on local machine
+- connect to github, push on github, use account, use your private key to show github that you created the public key mathematic proof that only private key can generate public key
+
+`cat key.pub`
+
+creating ssh key
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
