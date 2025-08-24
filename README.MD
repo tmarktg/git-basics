@@ -30,7 +30,13 @@ Git Commands
 - pull -> download changes from remote repo to local machine, opposite of push
 - status -> shows all files that were updated, created, deleted that haven't been saved in commit yet
 - commit -m "heading" -m "description" -> m means message, what and why of the commit you're making
-- push origin master -> origin is location of git repository master is branch to push to
+- push -u origin master -> origin is location of git repository, master is branch to push to, u means upstream, this is where I want to push it to by default
+- in future don't need -u, since that is default
+- remote -v -> somewhere else not on computer, -v shows any remote repos that is connected to repo
+
+- git branch
+- git checkout -b -> switch bewteen branches or use -b to create a new branch
+- git push and git push -u origin feature-readme-instructions will push a branch up to github
 
 `ls -la`
 
@@ -58,3 +64,32 @@ key.pub
 
 creating ssh key
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Github workflow
+write code -> commit changes -> make a pull request
+
+pull request
+
+- if we didnt own the repository
+- if we didn't have access rights
+- if we need someone else to review our code
+- merged in with rest of code
+
+Local git workflow
+write code -> stage changes (git add) -> commit changes (git commit) -> push changes (git push) -> make a pull request
+
+Git branching -master branch (main or default branch)
+
+- can create a feature branch
+- updates on feature branch only seen on feature branch
+- merge feature branch back later
+
+## Demo
+
+Some description!
+
+## Subheader
+
+Watch tutorial on YouTube
+
+1. Open index.html in your browser
