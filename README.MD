@@ -84,6 +84,13 @@ Git branching -master branch (main or default branch)
 - updates on feature branch only seen on feature branch
 - merge feature branch back later
 
+made a pr
+
+- anyone can review, comment ask for changes/update
+- can update code with additional commits on same branch
+- pr merged, delete feature branch and switch back to master branch
+- make additional coding changes, make new branch start process over
+
 ## Demo
 
 Some description!
