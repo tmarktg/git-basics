@@ -28,3 +28,10 @@ Git Commands
 - commit -> save your files in git
 - push -> upload git commits to a remote repo like github
 - pull -> download changes from remote repo to local machine, opposite of push
+- status -> shows all files that were updated, created, deleted that haven't been saved in commit yet
+- commit -m -> m means message, what and why of the commit you're making
+
+`ls -la`
+
+- list everything in the directory including hidden folders
+- git folder stores all files that save your commits or code changes, all changes recorded in history of repo including ones in github.com
