@@ -36,6 +36,7 @@ Git Commands
 
 - git branch
 - git checkout -b -> switch bewteen branches or use -b to create a new branch
+- git push and git push -u origin feature-readme-instructions will push a branch up to github
 
 `ls -la`
 
